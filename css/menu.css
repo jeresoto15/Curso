@@ -1,0 +1,45 @@
+/*
+color-primario: #deb887;
+color-secundario: #ffffff;
+color-terciario: #b8860b; 
+color-cuarto: #f5f5dc; 
+color-quinto: #000000;
+color-sexto: #5f9ea0;
+color-septimo: #f0f8ff;
+color-octavo: #ff0000;
+*/
+body{
+    background-image: url(../imagenes/patito.gif);
+}
+legend{
+    background-color: #deb887;
+    color: #ffffff;
+    text-align: center;
+}
+h1{
+    background-color: #b8860b;
+    color: #f5f5dc;
+    padding: 3px;
+    border: 2px solid #000000;
+    text-align: center;
+}
+.menu-cafe{
+    background-color:#5f9ea0;
+    border: 1px solid black;
+}
+.cafe{
+    color: #f0f8ff;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.info-promo{
+    background-color: black;
+    color:#ff0000;
+    font-size: 15px;
+}
+.footer{
+    background-color: aliceblue;
+}

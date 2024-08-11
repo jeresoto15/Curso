@@ -1,0 +1,50 @@
+/*
+color-primario: #000000;
+color-secunadrio: #f0f8ff;
+color-terciario: #ff6347;
+color-cuarto:  #ff8c00;
+color-quinto: #ffffff;
+color-sexto:;
+*/
+.beneficios{
+    background-color: #000000;
+    color: #f0f8ff;
+}
+
+
+.Titulo-promo{
+    color: #ff6347;
+}
+body{
+    background-image:url('../imagenes/patito.gif');
+}
+main h1{
+    background-color:#ff8c00;
+    color:#ffffff;
+}
+.footer{
+    background-color: #f0f8ff;
+}
+nav ul{
+    list-style:none;
+    text-align: center;
+    background-color:#ffffff;
+    color:#000000;
+    padding: 8px;
+    margin: 10px;
+    border: 2px solid black;
+}
+article{
+    text-align: center;
+}
+.titulo-beneficio{
+    font-size: 30px;
+    background-color: #ff8c00;
+}
+fieldset{
+    background-color: #ff8c00;
+}
+legend{
+    text-align: center;
+    background-color:#f0f8ff;
+}
