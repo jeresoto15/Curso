@@ -9,7 +9,7 @@ color-septimo: #f0f8ff;
 color-octavo: #ff0000;
 */
 body{
-    background-image: url(../imagenes/patito.gif);
+    background-image: url(../imagenes/fondo-web.jpg)
 }
 legend{
     background-color: #deb887;
@@ -42,4 +42,7 @@ h2{
 }
 .footer{
     background-color: aliceblue;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
 }

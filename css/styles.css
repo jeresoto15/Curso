@@ -2,49 +2,113 @@
 color-primario: #000000;
 color-secunadrio: #f0f8ff;
 color-terciario: #ff6347;
-color-cuarto:  #ff8c00;
+color-cuarto: #ff8c00;
 color-quinto: #ffffff;
-color-sexto:;
+color-sexto: #0000ff,#ffff00;
+*/
+
+/* 
+CONTENIDO DEL MAIN 
 */
 .beneficios{
     background-color: #000000;
     color: #f0f8ff;
 }
 
-
 .Titulo-promo{
     color: #ff6347;
 }
-body{
-    background-image:url('../imagenes/patito.gif');
+
+.body{
+    background-image:url('../imagenes/fondo-web.jpg');
+    background-size: auto;
 }
-main h1{
+
+.titulo-cafeteria{
     background-color:#ff8c00;
     color:#ffffff;
-}
-.footer{
-    background-color: #f0f8ff;
-}
-nav ul{
-    list-style:none;
+    border-radius: 10px;
     text-align: center;
-    background-color:#ffffff;
-    color:#000000;
+}
+
+/*
+CONTENIDO DEL HEADER
+*/
+.menu-cafe{
+    background-image:linear-gradient(#0000ff,#ffff00);
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    color:#ffffff;
     padding: 8px;
-    margin: 10px;
-    border: 2px solid black;
+    margin: 30px;
+    border-radius: 15px;
 }
-article{
+
+.lista-menu{
+    padding: 4px;
+}
+
+.letras{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.letras:hover{
+    color: crimson;
+}
+
+.articulo{
     text-align: center;
 }
+
+/*
+TITULO DE LAS PROMOCIONES
+*/
 .titulo-beneficio{
     font-size: 30px;
     background-color: #ff8c00;
+    text-align: center;
 }
-fieldset{
+
+/*
+FORMULARIO
+*/
+.fieldset{
     background-color: #ff8c00;
 }
-legend{
+
+.legend{
     text-align: center;
     background-color:#f0f8ff;
+}
+
+/*
+ANCHO PARA ELEMENTOS DEL FORMULARIO
+*/
+.elemento-form{
+    width: 200px; ;
+}
+
+.opcion-form{
+    width: 30px;
+}
+
+/*
+ELEMENTOS DEL FOOTER
+*/
+.footer{
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (min-width:992px){
+    .menu-cafe{
+        flex-direction: row;
+    }
 }
