@@ -8,41 +8,127 @@ color-sexto: #5f9ea0;
 color-septimo: #f0f8ff;
 color-octavo: #ff0000;
 */
-body{
-    background-image: url(../imagenes/fondo-web.jpg)
+
+/*
+CONTENIDO DEL HEADER
+*/
+.lista-nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+    
 }
-legend{
-    background-color: #deb887;
-    color: #ffffff;
+
+.lista-nav .item-nav {
     text-align: center;
+    flex-grow: 1;
 }
-h1{
+
+.lista-nav .item-nav a {
+    background-color: #000000;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 3px solid blue;
+    display: block;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 800ms;
+}
+
+.lista-menu{
+    padding: 4px;
+}
+
+
+.lista-nav .item-nav a:hover{
+    color:#5C008C;
+}
+
+.titulo-menu{
     background-color: #b8860b;
     color: #f5f5dc;
     padding: 3px;
     border: 2px solid #000000;
     text-align: center;
 }
-.menu-cafe{
-    background-color:#5f9ea0;
-    border: 1px solid black;
+
+
+.body{
+    background-image: url(../imagenes/fondo-web.jpg)
 }
-.cafe{
-    color: #f0f8ff;
-}
-h2{
+
+.titulo-card-container{
+    background-color: #b8860b;
+    color: #f5f5dc;
+    padding: 3px;
+    border: 2px solid #000000;
     text-align: center;
     font-size: 30px;
 }
+
+
+/*
+CSS PARA LAS CARDS
+*/
+.card-container-menu{
+    font-size: 18px;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.card-menu{
+    background-color: #000000;
+    color: #f0f8ff;
+    text-align: center;
+    padding: 1em;
+    border: 3px solid blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.cafe{
+    color: #ff6347;
+}
+
 
 .info-promo{
     background-color: black;
     color:#ff0000;
     font-size: 15px;
 }
+
 .footer{
     background-color: aliceblue;
     display: flex;
     justify-content:space-around;
     flex-direction: column;
+}
+
+@media (min-width:992px){
+    .lista-nav{
+        flex-direction: row;
+    }
+    
+    .card-container-menu{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .titulo-card-container{
+        grid-column: span 3;
+    }
 }

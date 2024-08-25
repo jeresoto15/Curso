@@ -4,58 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarea</title>
-    <link rel="icon" href="./imagenes/icono-cafe.png">
+    <link rel="icon" href="./imagenes/cobayo-icono.png">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <!-- Body -->
-<body class="body">
+<body class="body-page">
+    <!--Inicio de header-->
     <header>
         <nav>
-            <ul class="menu-cafe">
-                    <li class="lista-menu"><a href="menu.html" class="letras">MENU CAFÉ</li>
-                        <li class="lista-menu"><a href="#" class="letras">CONTACTO</a></li>
+            <ul class="lista-nav">
+                    <li class="item-nav">
+                        <a href="menu.html">MENU CAFÉ</a>
+
+                        </li>
+
+                        <li class="item-nav">
+                            <a href="contacto.html">CONTACTO</a>
+                        </li>
                     </ul>
                 </nav>
         </header>
+<!--Fin de header-->
 
+        <!--Inicio de Main-->
     <main>
-
         <!-- Beneficios -->
-        <h1 class="titulo-cafeteria">Cafeteria by kokó</h1>
-        <section class="beneficios">
-         <article class="titulo-beneficio">Promociones</article>
-            <article class="articulo">
-                <h3 class="Titulo-promo">Promo 1</h3>
-                <p>1 Cafe + 2 Medialunas $3500</p>
+        <h1 class="titulo-card-container">Cafeteria by kokó</h1>
+        
+        <article class="titulo-beneficio">Promociones</article><br>
+       
+        <section class="card-container">
+            
+         <article class="card">
+                <h3 class="titulo-card">Promo 1</h3>
+                <img src="imagenes/cafe-dos-medialunas.jpg" alt="">
+                <p class="contenido-card">1 Cafe + 2 Medialunas $3500</p>
             </article>
-           <article class="articulo">
-               <h3 class="Titulo-promo">Promo 2</h3>
-               <p>1 Submarino + 4 Tostadas $4200</p>
-            </article>
-            <article class="articulo">
 
-                <h3 class="Titulo-promo">Promo 3</h3>
-                <p>2 Capuccinos + 2 Submarinos (Incluyen tostadas) $9300</p>
+           <article class="card">
+               <h3 class="titulo-card">Promo 2</h3>
+               <img src="imagenes/submarino-y-tostados.jpg" alt="">
+               <p class="contenido-card">2 Submarinos + 4 Tostados $4200</p>
+            </article>
+
+            <article class="card">
+                <h3 class="titulo-card">Promo 3</h3>
+                <img src="imagenes/capuccino-y-submarino.jpg" alt="">
+                <p class="contenido-card">2 Capuccinos + 2 Submarinos (Incluyen tostados) $9300</p>
             </article> 
         </section>
 
-        <!--  Formulario -->
-        <form action="#" method="get">
-            <fieldset class="fieldset">
-                    <legend class="legend">Informacion Personal</legend>
-                    Nombre<br>
-                    <input type="text" name="Nombre" class="elemento-form"><br>
-                    Edad<br>
-                    <input type="number" name="Edad" class="elemento-form"><br>
-                    Hincha de<br>
-                    <input type="radio" name="Hincha de" value="Boca" class="opcion-form">Boca <br>
-                    <input type="radio" name="Hincha de" value="Bokita" class="opcion-form">Bokita <br>
-                    <input type="radio" name="Hincha de" value="Un equipo chico" class="opcion-form" >Un equipo chico<br><br>
-                    <input type="submit" value="Enviar" >
-        </fieldset>
-        </form>
+       
     </main>
+    <!--Fin del Main-->
     <br><br><br><br><br>
 
     <!-- Footer -->
