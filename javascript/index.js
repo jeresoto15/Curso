@@ -4,5 +4,4 @@ function calcArea (π, radio) {
      console.log("el area de un circulo es: " + area)
 }
 
-
-calcArea(1, 2)
+calcArea()

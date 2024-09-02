@@ -39,7 +39,7 @@ CONTENIDO DEL HEADER
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
-    transition: 800ms;
+    transition: all 400ms;
 }
 
 .lista-menu{
@@ -48,7 +48,9 @@ CONTENIDO DEL HEADER
 
 
 .lista-nav .item-nav a:hover{
-    color:#5C008C;
+    color:#ffd700;
+    box-shadow: 5px 5px 20px green;
+    transform: translateY(-3%)
 }
 
 .titulo-menu{
@@ -124,9 +126,12 @@ CSS PARA LAS CARDS
 
 
 .info-promo{
-    background-color: black;
-    color:#ff0000;
-    font-size: 15px;
+    background-color: ivory;
+    color: forestgreen;
+    font-size: 1.2em;
+    padding: 1em;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 .footer{

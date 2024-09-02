@@ -59,6 +59,8 @@ CONTENIDO DEL MAIN
     color:#ffffff;
     border-radius: 10px;
     text-align: center;
+    padding: 0.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*
@@ -70,6 +72,7 @@ TITULO DE LAS PROMOCIONES
     text-align: center;
     color: #f0f8ff;
     border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /*
