@@ -61,7 +61,9 @@ CONTENIDO DEL HEADER
 
 
 .body{
-    background-image: url(../imagenes/fondo-web.jpg)
+    background-image: url(../imagenes/fondo-web.jpg);
+    margin: 0;
+    padding: 0;
 }
 
 .titulo-card-container{
@@ -73,6 +75,12 @@ CONTENIDO DEL HEADER
     font-size: 30px;
 }
 
+.tamaño-taza img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(red,violet,blue);
+}
 
 /*
 CSS PARA LAS CARDS
@@ -88,17 +96,26 @@ CSS PARA LAS CARDS
     align-items: stretch;
 }
 
+
+
 .card-menu{
     background-color: #000000;
     color: #f0f8ff;
     text-align: center;
     padding: 1em;
-    border: 3px solid blue;
+    border: 3px solid rgba(0, 255, 117, 0.30);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     overflow: hidden;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.card-menu:hover{
+    box-shadow: 5px 5px 20px #ffd700;
+    transform: translateY(-3%);
 }
 
 .cafe{
@@ -119,6 +136,47 @@ CSS PARA LAS CARDS
     flex-direction: column;
 }
 
+.footer .footer-iconos-grandes img,
+ .footer-iconos-chicos img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.footer .footer-iconos-grandes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.footer .icono-grande{
+    background-color: crimson;
+    padding: 1em;
+    text-align: center;
+}
+
+.footer .icono-grande a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer .footer-iconos-chicos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.footer .icono-chico{
+max-width: 40px;
+text-align: center;
+}
+
+.footer .icono-chico a{
+    color: #000000;
+    text-decoration: none;
+}
+
+
 @media (min-width:992px){
     .lista-nav{
         flex-direction: row;
@@ -130,5 +188,15 @@ CSS PARA LAS CARDS
 
     .titulo-card-container{
         grid-column: span 3;
+    }
+
+    .tamaño-taza{
+        text-align: center;
+    }
+
+    .tamaño-taza img{
+        padding: 0 1em ;
+        width: auto;
+        height: auto;
     }
 }

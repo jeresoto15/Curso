@@ -41,6 +41,13 @@ CONTENIDO DEL HEADER
 }
 
 
+.body-contacto{
+    background-image:url('../imagenes/fondo-web.jpg');
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*
 FORMULARIO
 */
@@ -60,9 +67,10 @@ ANCHO PARA ELEMENTOS DEL FORMULARIO
 .elemento-form{
     width: 200px;
     height: 30px;
-    display: flex;
-    justify-content: center;
     border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .opcion-form{
@@ -82,7 +90,7 @@ ELEMENTOS DEL FOOTER
 CSS PARA EL FORMULARIO
 */
 
-form {
+.form {
     background-color: #5C008C;
     border-radius: 2.5%;
     border-style: none;
@@ -93,7 +101,28 @@ form {
     gap: 1em;
     grid-template-columns: 1fr;
     justify-content: center;
-    align-items: stretch;
+}
+
+input, textarea{
+    background-color: #000000;
+    color: #fff;
+    font-size: 16px;
+    border-bottom: 2px solid #ffd700; /* Color Dorado*/
+width: 100%;
+}
+
+.button{
+padding: 10px 20px;
+font-size: 16px;
+background-color: #ffd700;
+color: #000000;
+cursor: pointer;
+transition: background-color 0.3s;
+border-radius: 10px;
+}
+
+.button:hover{
+    background-color: #ffbf00; /*Color Dorado Más Oscuro*/
 }
 
 .feedback{
@@ -109,13 +138,13 @@ form {
 }
 
 .titulo-contact{
-    color: #f0f8ff;
+    color: #fff;
     background-color: #ff1493;
-    font-size: large;
-    padding: 10px 2px;
-    margin-left: 15%;
-    margin-right: 15%;
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: .3em;
     text-align: center;
+    margin: 0;
 }
 
 .form-contact{
@@ -123,20 +152,122 @@ form {
     color: #f0f8ff;
     background-color: #ff1493;
     padding: 2px 20px;
+    display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
 }
 
-*, ::after, ::before {
-    box-sizing: border-box;
+.footer{
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
 }
+
+.footer .footer-iconos-grandes img,
+ .footer-iconos-chicos img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.footer .footer-iconos-grandes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.footer .icono-grande{
+    background-color: crimson;
+    padding: 1em;
+    text-align: center;
+}
+
+.footer .icono-grande a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer .footer-iconos-chicos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 0 1.6em;
+}
+
+.footer .icono-chico img{
+    max-width: 30px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: .7em;
+}
+
+.footer .icono-chico a{
+    color: #000000;
+    text-decoration: none;
+}
+
 
 @media (min-width:768px){
     .lista-nav{
         flex-direction: row;
     }
+
+    input, textarea{
+        width: 90%;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .form-contact{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: .5em;
+    }
+
+    .elemento-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
 }
 
 @media (min-width:992px){
     .lista-nav{
         flex-direction: row;
+    }
+
+    input, textarea{
+        width: 100%;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .form-contact{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: .5em;
+    }
+
+    .elemento-form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 }
