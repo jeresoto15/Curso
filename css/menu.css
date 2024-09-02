@@ -130,10 +130,30 @@ CSS PARA LAS CARDS
 }
 
 .footer{
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     display: flex;
-    justify-content:space-around;
     flex-direction: column;
+    padding: 1em;
+}
+
+.footer-header{
+    padding: .5em;
+}
+
+.footer-header h3, 
+.footer-header p {
+margin: 0;
+}
+
+.footer-header h3 {
+font-size: 2em;
+margin-bottom: 0.2em;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-header p {
+font-size: 1em;
+font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .footer .footer-iconos-grandes img,
@@ -148,6 +168,7 @@ CSS PARA LAS CARDS
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+
 }
 
 .footer .icono-grande{
@@ -163,12 +184,17 @@ CSS PARA LAS CARDS
 
 .footer .footer-iconos-chicos{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 0 1.6em;
 }
 
-.footer .icono-chico{
-max-width: 40px;
-text-align: center;
+.footer .icono-chico img{
+    max-width: 30px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding: .7em;
 }
 
 .footer .icono-chico a{
@@ -198,5 +224,36 @@ text-align: center;
         padding: 0 1em ;
         width: auto;
         height: auto;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 4em 0;
+    }
+
+    .footer-header{
+        align-self: flex-end;
+    }
+
+    .footer-iconos-grandes{
+        grid-row: span 2;
+    }
+
+    .footer .footer-iconos-chicos{
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .footer .icono-chico img{
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .footer .icono-chico img{
+        width: 24px;
+        margin: 0;
     }
 }
