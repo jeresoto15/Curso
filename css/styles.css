@@ -1,13 +1,4 @@
 /*
-color-primario: #000000;
-color-secunadrio: #f0f8ff;
-color-terciario: #ff6347;
-color-cuarto: #ff8c00;
-color-quinto: #ffffff;
-color-sexto: #0000ff,#ffff00;
-*/
-
-/*
 INCIO DEL HEADER
 */
 .lista-nav {
@@ -276,9 +267,10 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 .footer .footer-iconos-chicos{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 3px;
     padding: 0 1.6em;
 }
+
 
 .footer .icono-chico img{
     max-width: 30px;
