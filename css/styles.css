@@ -8,7 +8,7 @@ color-sexto: #0000ff,#ffff00;
 */
 
 /*
-CONTENIDO DEL HEADER
+INCIO DEL HEADER
 */
 .lista-nav {
     display: flex;
@@ -17,7 +17,7 @@ CONTENIDO DEL HEADER
     justify-content: space-evenly;
     align-items: stretch;
     list-style: none;
-    padding: 0;
+    padding: 4px;
     gap: 10px;
     
 }
@@ -31,7 +31,6 @@ CONTENIDO DEL HEADER
     background-color: #000000;
     text-decoration: none;
     border-radius: 10px;
-    border: 3px solid blue;
     display: block;
     color: white;
     padding: 10px;
@@ -51,6 +50,44 @@ CONTENIDO DEL HEADER
     transform: translateY(-3%)
 }
 
+
+.titulo-menu{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;    
+    padding: 3px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.container-cabecera{
+    background-color: #e9967a;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.cabecera li{
+list-style: none;
+margin: 0;
+}
+
+.cabecera a{
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+
+.cabecera img{
+    width: 70px;
+    padding: 0;
+    margin: 0;
+}
+/* FIN DEL HEADER */
+
+
 /* 
 CONTENIDO DEL MAIN 
 */
@@ -68,15 +105,17 @@ TITULO DE LAS PROMOCIONES
 */
 .titulo-beneficio{
     font-size: 30px;
-    background-color: #ff8c00;
+    background-color: #a52a2a;
     text-align: center;
     color: #f0f8ff;
     border-radius: 10px;
     font-family: 'Times New Roman', Times, serif;
 }
 
+
+
 /*
-CSS PARA LAS CARDS
+INICIO DE LAS CARDS
 */
 .card-container{
     font-size: 18px;
@@ -110,19 +149,60 @@ CSS PARA LAS CARDS
 }
 
 .titulo-card{
-    color: #ff6347;
+    color:lightsalmon;
 }
 
+.contenido-card{
+    color:chocolate;
+}
+
+/* FIN DE LAS CARDS */
+
+
+/* INICIO DEL BODY */
 .body{
     background-image:url('../imagenes/fondo-web.jpg');
     background-size: auto;
     margin: 0;
     padding: 0;
 }
+/* FIN DEL BODY */
+
+
+.label{
+    background-color: #f0f8ff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 6px;
+}
+
+
+.boton-saludo{
+    width: 50px;
+    height: 20px;
+    color: #f0f8ff;
+    background-color: #a52a2a;
+}
+
+
+
+.saludo-nombre{
+    width: 15em;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.saludo-salida{
+    background-color:#000000;
+    color:#00ff7f;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1em;
+}
 
 
 /*
-ELEMENTOS DEL FOOTER
+INICIO DEL FOOTER
 */
 .footer{
     background-color: #f0f8ff;
@@ -139,6 +219,8 @@ ELEMENTOS DEL FOOTER
 .footer-header p {
 margin: 0;
 }
+/* FIN DEL FOOTER */
+
 
 .footer-header h3 {
 font-size: 2em;
@@ -166,16 +248,30 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 
-.footer .icono-grande{
-    background-color: crimson;
+.footer .icono-grande-1, .footer .icono-grande-2{
+    background-color: lightblue;
     padding: 1em;
     text-align: center;
 }
 
-.footer .icono-grande a{
+.footer .icono-grande-2 a, .footer .icono-grande-1 a{
     color: #000000;
     text-decoration: none;
 }
+
+.footer .icono-grande-1:hover, .footer .icono-grande-2:hover{
+    transform: translateY(-3%);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.footer .icono-grande-1 img:hover, .footer .icono-grande-2 img:hover{
+    transform: translateY(-3%);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+
 
 .footer .footer-iconos-chicos{
     display: grid;
@@ -192,11 +288,17 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     padding: .7em;
 }
 
+.icono-chico:hover{
+    cursor: pointer;
+    transition: all 500ms;
+    transform: translateY(-4%);
+}
+
 .footer .icono-chico a{
     color: #000000;
     text-decoration: none;
 }
-
+/* FIN DEL FOOTER */
 
 @media (min-width:768px){
     .lista-nav{
@@ -205,6 +307,15 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     .card-container{
         grid-template-columns: 1fr 1fr 1fr;
     }    
+
+    .cabecera{
+        justify-content: space-around;
+    }
+    
+     .cabecera img{
+        width: 70px;
+    }
+
 }
 
 
@@ -218,6 +329,18 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 
     .titulo-card-container {
         grid-column: span 3;
+    }
+
+    .titulo-menu{
+        font-size: 2.5em;
+    }
+    
+        .cabecera{
+            justify-content: space-around;
+        }
+        
+    .cabecera img{
+        width: 90px;
     }
 
     .footer{
@@ -250,4 +373,5 @@ font-family: Georgia, 'Times New Roman', Times, serif;
         width: 24px;
         margin: 0;
     }
+
 }

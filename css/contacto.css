@@ -1,5 +1,5 @@
 /*
-CONTENIDO DEL HEADER
+INCIO DEL HEADER
 */
 .lista-nav {
     display: flex;
@@ -8,7 +8,7 @@ CONTENIDO DEL HEADER
     justify-content: space-evenly;
     align-items: stretch;
     list-style: none;
-    padding: 0;
+    padding: 4px;
     gap: 10px;
     
 }
@@ -22,13 +22,12 @@ CONTENIDO DEL HEADER
     background-color: #000000;
     text-decoration: none;
     border-radius: 10px;
-    border: 3px solid blue;
     display: block;
     color: white;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
-    transition: 800ms;
+    transition: all 400ms;
 }
 
 .lista-menu{
@@ -37,66 +36,80 @@ CONTENIDO DEL HEADER
 
 
 .lista-nav .item-nav a:hover{
-    color:#5C008C;
+    color:#ffd700;
+    box-shadow: 5px 5px 20px green;
+    transform: translateY(-3%)
 }
 
 
+.titulo-menu{
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;    
+    padding: 3px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.container-cabecera{
+    background-color: #e9967a;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.cabecera li{
+list-style: none;
+margin: 0;
+}
+
+.cabecera a{
+    text-decoration: none;
+    color: #f0f8ff;
+}
+
+
+.cabecera img{
+    width: 70px;
+    padding: 0;
+    margin: 0;
+}
+/* FIN  DEL HEADER */
+
+/* INICIO DEL BODY */
 .body-contacto{
     background-image:url('../imagenes/fondo-web.jpg');
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
+/* FIN DEL BODY */
+
 
 /*
-FORMULARIO
+INICIO DEL FORMULARIO
 */
-.fieldset-contact{
-    background-color: #ff8c00;
+
+.container{
+    width: 100%;
 }
 
-.legend-contact{
-    text-align: center;
-    background-color:#f0f8ff;
-    font-size: 20px;
-}
-
-/*
-ANCHO PARA ELEMENTOS DEL FORMULARIO
-*/
 .elemento-form{
     width: 200px;
     height: 30px;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 98%;
 }
 
-.opcion-form{
-    width: 30px;
-}
-
-/*
-ELEMENTOS DEL FOOTER
-*/
-.footer{
-    background-color: #f0f8ff;
-    display: flex;
-    flex-direction: column;
-}
-
-/*
-CSS PARA EL FORMULARIO
-*/
 
 .form {
     background-color: #5C008C;
-    border-radius: 2.5%;
-    border-style: none;
-    padding: 35px 30px 35px 30px;
+    border-radius: 2em;
+    padding:30px;
     margin: 0 auto;
-    text-align: start;
     display: grid;
     gap: 1em;
     grid-template-columns: 1fr;
@@ -105,10 +118,10 @@ CSS PARA EL FORMULARIO
 
 input, textarea{
     background-color: #000000;
-    color: #fff;
+    color: #f0f8ff;
     font-size: 16px;
     border-bottom: 2px solid #ffd700; /* Color Dorado*/
-width: 100%;
+    width: 100%;
 }
 
 .button{
@@ -116,25 +129,13 @@ padding: 10px 20px;
 font-size: 16px;
 background-color: #ffd700;
 color: #000000;
-cursor: pointer;
-transition: background-color 0.3s;
 border-radius: 10px;
 }
 
 .button:hover{
     background-color: #ffbf00; /*Color Dorado Más Oscuro*/
-}
-
-.feedback{
-    width: 100%;
-    height: 80%;
-    margin: 0 0 0 0;
-    padding: 50px 0px 50px 0px;
-    text-align: center;
-}
-
-.container{
-    width: 100%;
+    transition: background-color 0.3s;
+    cursor: pointer;
 }
 
 .titulo-contact{
@@ -142,7 +143,7 @@ border-radius: 10px;
     background-color: #ff1493;
     font-size: 24px;
     margin-bottom: 20px;
-    padding: .3em;
+    padding: 0.3em;
     text-align: center;
     margin: 0;
 }
@@ -153,85 +154,16 @@ border-radius: 10px;
     background-color: #ff1493;
     padding: 2px 20px;
     display: grid;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
 
-.footer{
-    background-color: #f0f8ff;
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-}
-
-.footer-header{
-    padding: .5em;
-}
-
-.footer-header h3, 
-.footer-header p {
-margin: 0;
-}
-
-.footer-header h3 {
-font-size: 2em;
-margin-bottom: 0.2em;
-font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.footer-header p {
-font-size: 1em;
-font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-.footer .footer-iconos-grandes img,
- .footer-iconos-chicos img {
-    display: block;
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-}
-
-.footer .footer-iconos-grandes{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-
-}
-
-.footer .icono-grande{
-    background-color: crimson;
-    padding: 1em;
-    text-align: center;
-}
-
-.footer .icono-grande a{
-    color: #000000;
-    text-decoration: none;
-}
-
-.footer .footer-iconos-chicos{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
-    padding: 0 1.6em;
-}
-
-.footer .icono-chico img{
-    max-width: 30px;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    padding: .7em;
-}
-
-.footer .icono-chico a{
-    color: #000000;
-    text-decoration: none;
-}
+/* FIN DEL FORMULARIO */
 
 
+
+/* INICIO MEDIA QUERIES PARA TABLET*/
 @media (min-width:768px){
     .lista-nav{
         flex-direction: row;
@@ -240,6 +172,29 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     input, textarea{
         width: 90%;
     }
+
+    .titulo-menu{
+        font-size: 2em;
+    }
+    
+        .cabecera{
+            justify-content: space-around;
+        }
+        
+    .cabecera img{
+        width: 70px;
+    }
+
+    .tamaño-taza{
+        text-align: center;
+    }
+
+    .tamaño-taza img{
+        padding: 0 1em ;
+        width: 70%;
+        height: 50%;
+    }
+
 
     .form{
         display: flex;
@@ -262,10 +217,24 @@ font-family: Georgia, 'Times New Roman', Times, serif;
     }
     
 }
+/* FIN MEDIA QUERIES PARA TABLET */
 
+/* INICIO MEDIA QUERIES LAPTOP */
 @media (min-width:992px){
     .lista-nav{
         flex-direction: row;
+    }
+
+    .titulo-menu{
+        font-size: 2.5em;
+    }
+    
+        .cabecera{
+            justify-content: space-around;
+        }
+        
+    .cabecera img{
+        width: 90px;
     }
 
     input, textarea{
@@ -324,3 +293,4 @@ font-family: Georgia, 'Times New Roman', Times, serif;
         margin: 0;
     }
 }
+/* FIN MEDIA QUERIES LAPTOP */

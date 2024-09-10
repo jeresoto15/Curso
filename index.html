@@ -3,116 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea</title>
+    <title>Cafetería by kokó</title>
     <link rel="icon" href="./imagenes/cobayo-icono.png">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <!-- Body -->
 <body class="body">
+
     <!--Inicio de header-->
     <header>
-        <nav>
-            <ul class="lista-nav">
-                    <li class="item-nav">
-                        <a href="menu.html">MENU CAFÉ</a>
-
-                        </li>
-
+        <nav class="container-cabecera">
+            
+            
+            <ul class="cabecera">
+                
+                <article class="item-cabecera">
+                    <li>
+                        <a href="index.html">
+                            <img src="imagenes/cobayo-icono.png" alt="">
+                        </a>
+                    </li>
+                </article>
+                
+                <h1 class="titulo-menu">Cafetería by kokó</h1>
+                
+            </ul>
+            <nav>
+                <ul class="lista-nav">
                         <li class="item-nav">
-                            <a href="contacto.html">CONTACTO</a>
-                        </li>
-                    </ul>
+                            <a href="menu.html">MENU</a>
+       
+                            </li>
+       
+                            <li class="item-nav">
+                                <a href="contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+
+        </nav>
+
                 </nav>
         </header>
 <!--Fin de header-->
 
         <!--Inicio de Main-->
     <main>
-        <!-- Beneficios -->
-        <h1 class="titulo-card-container">Cafeteria by kokó</h1>
         
         <article class="titulo-beneficio">Promociones</article><br>
-       
+
+        
+        <!-- Inicio de cards -->
         <section class="card-container">
             
          <article class="card">
                 <h3 class="titulo-card">Promo 1</h3>
                 <img src="imagenes/cafe-dos-medialunas.jpg" alt="">
                 <p class="contenido-card">1 Cafe + 2 Medialunas $3500</p>
+                <p>(Imagen ilustrativa)</p>
             </article>
 
            <article class="card">
                <h3 class="titulo-card">Promo 2</h3>
                <img src="imagenes/submarino-y-tostados.jpg" alt="">
                <p class="contenido-card">2 Submarinos + 4 Tostados $4200</p>
+               <p>(Imagen ilustrativa)</p>
             </article>
 
             <article class="card">
                 <h3 class="titulo-card">Promo 3</h3>
                 <img src="imagenes/capuccino-y-submarino.jpg" alt="">
                 <p class="contenido-card">2 Capuccinos + 2 Submarinos (Incluyen tostados) $9300</p>
+                <p>(Imagen ilustrativa)</p>
             </article> 
+            
         </section>
-
-       
+        <!-- Fin de cards -->
+        
     </main>
     <!--Fin del Main-->
+<br><br>
+
+    <label for="saludar" class="label">Si llegaste hasta acá abajo, ingresa tu nombre para un saludo cordial.</label><br>
+     <button onclick="saludar()" class="boton-saludo">OK</button>
+    <input type="text" id="inp-nombre" placeholder="Ingrese su nombre..." class="saludo-nombre">
+    <div id="salida-saludo"  class="saludo-salida"></div>
+
     <br><br><br><br><br>
 
-    <!-- Footer -->
+    <!-- inicio de footer -->
     <footer class="footer">
 
    <article class="footer-header">
-       <h3>Jeremias Soto</h3>
-       <p>Seguinos en las redes sociales</p>
+       <h3>Jeremías Soto</h3>
+       <p>Seguime en las redes sociales</p>
     </article>     
 
+
+    <!-- Inicio de iconos grandes -->
 <section class="footer-iconos-grandes">
-    <article class="icono-grande">    
-        <a href="#">
+    <article class="icono-grande-1">    
+        <a href="https://github.com/jeresotoo" target="_blank">
             <img src="./imagenes/github.png" alt="">
             <p>github</p>
         </a>
     </article>
 
-    <article class="icono-grande">
-        <a href="#">
+    <article class="icono-grande-2">
+        <a href="mailto:jere3009@gmail.com">
             <img src="imagenes/correo-electronico.png" alt="">
             <p>email</p>
         </a>
     </article>
 </section>
+<!-- Fin de iconos grandes -->
 
+
+<!-- Inicio de iconos chicos -->
     <section class="footer-iconos-chicos">        
        
         <article class="icono-chico">
-            <a href="#">
+            <a href="https://www.facebook.com/jere.soto.16" target="_blank">
                 <img src="imagenes/facebook.png" alt="">
             </a>
         </article>
 
         <article class="icono-chico">
-            <a href="#">
+            <a href="https://x.com/jere_sotoo" target="_blank">
                 <img src="imagenes/twitter.png" alt="">
             </a>
         </article>
         
         <article class="icono-chico">
-            <a href="#">
+            <a href="https://www.instagram.com/jere.sotoo/" target="_blank">
                 <img src="imagenes/instagram.png" alt="">
             </a>
         </article>
 
         <article class="icono-chico">
-            <a href="#">
+            <a href="https://www.tiktok.com/@jere.sotoo" target="_blank">
                 <img src="imagenes/tik-tok.png" alt="">
             </a>
         </article>
-
-</section>
+        
+    </section>
+    <!-- Fin de iconos chicos -->
+     
 
 </footer>
+<!-- Fin de footer -->
+
 <script src="javascript/index.js"></script>
 </body>
 </html>
